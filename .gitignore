@@ -217,6 +217,33 @@ tempCodeRunnerFile.py
 # Marimo
 marimo/_static/
 marimo/_lsp/
+
+# --- Données brutes (trop lourdes pour Git) ---
+data/*.csv
+data/*.xlsx
+train.csv
+test.csv
+
+# --- Modèles sérialisés (à versionner via DVC, pas Git) ---
+models/*.pkl
+models/*.joblib
+*.h5
+*.pt
+
+# --- Artefacts MLflow / caches ---
+mlruns/
+.cache/
+.pytest_cache/
+
+# --- Secrets / variables d'environnement ---
+.env
+*.key
+credentials.json
+kaggle.json
+
+# --- Divers ---
+.DS_Store
+*.tmp
 __marimo__/
 
 # Streamlit
